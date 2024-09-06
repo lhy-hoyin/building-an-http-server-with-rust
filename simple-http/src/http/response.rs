@@ -17,7 +17,7 @@ pub struct HttpResponse {
 
 impl HttpResponse {
     pub fn new(request: &HttpRequest) -> io::Result<HttpResponse> {
-        let version = Version::V2_0;
+        let version = Version::V1_1;
         let mut status = ResponseStatus::NotFound;
         let mut content_length: usize = 0;
         let mut accept_ranges = AcceptRanges::None;

@@ -25,7 +25,7 @@ impl HttpRequest {
             Resource { path: "".to_string() }
         };
         let version: Version = Version::new(request).map_err(|err| {
-            io::Error::new(io::ErrorKind::InvalidData, err.msg) 
+            io::Error::new(io::ErrorKind::InvalidData, err.msg)
         })?;
         let headers: HttpHeader = if let Some(headers) = HttpHeader::new(request) {
             headers
