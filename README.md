@@ -1,1 +1,1 @@
-# building-an-http-server-with-rust
+StackUp Campaign: [Building An HTTP Server with Rust](https://earn.stackup.dev/campaigns/building-an-http-server-with-rust)
